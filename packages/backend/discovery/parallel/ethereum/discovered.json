@@ -1,8 +1,8 @@
 {
   "name": "parallel",
   "chain": "ethereum",
-  "blockNumber": 18962479,
-  "configHash": "0x2b4f3c389aa29b8108f41d6c144a193cf3a3f5d01ed5795026b7493c5fa37c5c",
+  "blockNumber": 18991767,
+  "configHash": "0x8b0b9a1a570b525ec787bdf018ce6a001c753a606060abc4bd0579184d5abd14",
   "version": 3,
   "contracts": [
     {
@@ -108,16 +108,17 @@
       }
     },
     {
-      "name": "",
+      "name": "OneStepProverMemory",
       "address": "0x4811500e0d376Fa8d2EA3CCb7c61E0afB4F5A7f1",
       "unverified": true,
       "upgradeability": {
         "type": "immutable"
       },
-      "sinceTimestamp": 1701972755
+      "sinceTimestamp": 1701972755,
+      "derivedName": ""
     },
     {
-      "name": "GnosisSafe",
+      "name": "OwnerMultisig",
       "address": "0x4a4962275DF8C60a80d3a25faEc5AA7De116A746",
       "upgradeability": {
         "type": "gnosis safe",
@@ -139,7 +140,8 @@
         "getThreshold": 3,
         "nonce": 9,
         "VERSION": "1.3.0"
-      }
+      },
+      "derivedName": "GnosisSafe"
     },
     {
       "name": "Bridge",
@@ -158,11 +160,11 @@
           "0x36E5DE57f862cf5bA28624845faB8c2fF6Aa41d2"
         ],
         "allowedOutboxList": ["0xB6e0586616ebE79b2F86dDB32048c500D23b3AC3"],
-        "delayedMessageCount": 273,
+        "delayedMessageCount": 404,
         "rollup": "0x6594085ca55a2B3a5fAD1C57A270D060eEa99877",
         "sequencerInbox": "0xb4795A0edae98d7820C37F06f6b858e7acb51DF8",
-        "sequencerMessageCount": 38,
-        "sequencerReportedSubMessageCount": 281
+        "sequencerMessageCount": 93,
+        "sequencerReportedSubMessageCount": 427
       },
       "derivedName": "Bridge"
     },
@@ -208,12 +210,12 @@
         "confirmPeriodBlocks": 43200,
         "currentRequiredStake": "100000000000000000",
         "extraChallengeTimeBlocks": 40320,
-        "firstUnresolvedNode": 2,
+        "firstUnresolvedNode": 14,
         "inbox": "0x12485B9d469c1D51d05b5C39e009D50eF0170cF7",
         "isERC20Enabled": false,
         "lastStakeBlock": 18914041,
-        "latestConfirmed": 1,
-        "latestNodeCreated": 37,
+        "latestConfirmed": 13,
+        "latestNodeCreated": 92,
         "loserStakeEscrow": "0x0000000000000000000000000000000000000000",
         "minimumAssertionPeriod": 75,
         "outbox": "0xB6e0586616ebE79b2F86dDB32048c500D23b3AC3",
@@ -246,7 +248,8 @@
       "sinceTimestamp": 1704125939,
       "values": {
         "owner": "0xD368b8dC5cB6fA26A53b7588db9A87E509A72d89"
-      }
+      },
+      "derivedName": "ProxyAdmin"
     },
     {
       "name": "L1ERC20Gateway",
@@ -269,22 +272,24 @@
       "derivedName": "L1ERC20Gateway"
     },
     {
-      "name": "",
+      "name": "OneStepProverMath",
       "address": "0x89AF7C4C2198c426cFe6E86de0680A0850503e06",
       "unverified": true,
       "upgradeability": {
         "type": "immutable"
       },
-      "sinceTimestamp": 1701972815
+      "sinceTimestamp": 1701972815,
+      "derivedName": ""
     },
     {
-      "name": "",
+      "name": "OneStepProverHostIo",
       "address": "0x99a2A31300816C1FA3f40818AC9280fe7271F878",
       "unverified": true,
       "upgradeability": {
         "type": "immutable"
       },
-      "sinceTimestamp": 1701972863
+      "sinceTimestamp": 1701972863,
+      "derivedName": ""
     },
     {
       "name": "ValidatorWalletCreator",
@@ -328,7 +333,7 @@
       "implementations": ["0x873484Ba63353C8b71210ce123B465512d408B27"],
       "sinceTimestamp": 1704125939,
       "values": {
-        "batchCount": 38,
+        "batchCount": 93,
         "bridge": "0x5a961c7D162195a9Dc5a357Cc168b0694283382E",
         "DATA_AUTHENTICATED_FLAG": "0x40",
         "HEADER_LENGTH": 40,
@@ -337,7 +342,7 @@
         "maxTimeVariation": [5760, 48, 86400, 3600],
         "rollup": "0x6594085ca55a2B3a5fAD1C57A270D060eEa99877",
         "setIsBatchPosterCount": 1,
-        "totalDelayedMessagesRead": 271
+        "totalDelayedMessagesRead": 403
       },
       "derivedName": "SequencerInbox"
     },
@@ -399,13 +404,14 @@
       "derivedName": "UpgradeExecutor"
     },
     {
-      "name": "",
+      "name": "OneStepProver0",
       "address": "0xDf94F0474F205D086dbc2e66D69a856FCf520622",
       "unverified": true,
       "upgradeability": {
         "type": "immutable"
       },
-      "sinceTimestamp": 1701972707
+      "sinceTimestamp": 1701972707,
+      "derivedName": ""
     }
   ],
   "eoas": [
