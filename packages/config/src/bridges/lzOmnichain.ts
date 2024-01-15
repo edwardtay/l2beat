@@ -100,12 +100,12 @@ export const lzOmnichain: Bridge = {
   },
   contracts: {
     addresses: [
-      {
-        multipleAddresses: OMNICHAN_ESCROWS.map((e) => e.address),
-        name: 'Omnichain Tokens (OFT)',
-        description:
-          'Contracts using LayerZero smart contracts to transfer tokens between chains. The implementation details may vary between each individual omnichain token and must be individually assessed. LayerZero as a framework to build omnichain application does not provide any base security as applications can define their own security settings, however applications and tokens choosing the default security settings will leverage security provided by default Oracle, Relayer, Verification Library and Proof Library. Default settings are managed by LayerZero team.',
-      },
+      // {
+      //   multipleAddresses: OMNICHAN_ESCROWS.map((e) => e.address),
+      //   name: 'Omnichain Tokens (OFT)',
+      //   description:
+      //     'Contracts using LayerZero smart contracts to transfer tokens between chains. The implementation details may vary between each individual omnichain token and must be individually assessed. LayerZero as a framework to build omnichain application does not provide any base security as applications can define their own security settings, however applications and tokens choosing the default security settings will leverage security provided by default Oracle, Relayer, Verification Library and Proof Library. Default settings are managed by LayerZero team.',
+      // },
       discovery.getContractDetails(
         'TSS Oracle',
         'Contract used to submit source chain block hashes. One of the default Oracles.',
