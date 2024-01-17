@@ -1,4 +1,80 @@
-# Diff at Tue, 09 Jan 2024 16:40:02 GMT:
+# Diff at Wed, 17 Jan 2024 17:12:41 GMT
+
+- author: Michał Podsiadły (<michal.podsiadly@l2beat.com>)
+- comparing to: master@4d3edd1a651050bb1adb18c47558d1f5123c5552 block: 114609805
+- current block number: 114956376
+
+## Description
+
+Changed default path-way config:
+
+- default inbound/outbound library migrated to FPValidator
+
+## Watched changes
+
+```diff
+    contract UltraLightNodeV2 (0x4D73AdB72bC3DD368966edD0f0b2148401A178E2) {
+      values.defaultAppConfig.101.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.101.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.102.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.102.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.106.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.106.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.109.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.110.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.110.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.111.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.111.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.112.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.112.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.115.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.115.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.116.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.116.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.126.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.126.outboundProofType:
+-        1
++        2
+    }
+```
+
+# Diff at Tue, 09 Jan 2024 16:40:02 GMT
 
 - author: Michał Sobieraj-Jakubiec (<michalsidzej@gmail.com>)
 - comparing to: master@0b578574e6a64020b5157f700c09de14e6b3eed3 block: 107689171
