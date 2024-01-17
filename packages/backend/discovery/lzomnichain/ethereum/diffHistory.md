@@ -1,4 +1,83 @@
-# Diff at Fri, 05 Jan 2024 13:32:55 GMT:
+# Diff at Wed, 17 Jan 2024 17:04:59 GMT
+
+- author: Michał Podsiadły (<michal.podsiadly@l2beat.com>)
+- comparing to: master@4d3edd1a651050bb1adb18c47558d1f5123c5552 block: 18941390
+- current block number: 19027967
+
+## Description
+
+Changed default path-way config:
+
+- default inbound/outbound library migrated to FPValidator
+
+## Watched changes
+
+```diff
+    contract UltraLightNodeV2 (0x4D73AdB72bC3DD368966edD0f0b2148401A178E2) {
+      values.defaultAppConfig.101.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.101.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.102.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.102.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.106.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.106.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.109.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.109.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.110.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.110.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.111.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.111.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.112.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.112.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.115.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.115.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.116.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.116.outboundProofType:
+-        1
++        2
+      values.defaultAppConfig.126.inboundProofLib:
+-        1
++        2
+      values.defaultAppConfig.126.outboundProofType:
+-        1
++        2
+    }
+```
+
+# Diff at Fri, 05 Jan 2024 13:32:55 GMT
 
 - author: Michał Sobieraj-Jakubiec (<michalsidzej@gmail.com>)
 - comparing to: master@9b1911b38ffdc811ae8c1518aae762bfe4831370 block: 18671199
@@ -45,7 +124,7 @@ for block 18671199 (main branch discovery), not current.
     }
 ```
 
-# Diff at Tue, 28 Nov 2023 16:07:09 GMT:
+# Diff at Tue, 28 Nov 2023 16:07:09 GMT
 
 - author: Michał Sobieraj-Jakubiec (<michalsidzej@gmail.com>)
 - comparing to: master@049dc0679d8762dc52199c99e9e62ba7cb396a7b
@@ -111,7 +190,7 @@ New remote chains added: 217, 218, 230. One of the owners in the Stargate Multis
     }
 ```
 
-# Diff at Tue, 07 Nov 2023 10:45:37 GMT:
+# Diff at Tue, 07 Nov 2023 10:45:37 GMT
 
 - author: Michał Sobieraj-Jakubiec (<michalsidzej@gmail.com>)
 - comparing to: master@1272f95e37268203d1aa19a319b3dff48af9c73c
